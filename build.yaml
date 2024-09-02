@@ -9,9 +9,9 @@ targets:
       # --
       - widgetbook/lib/main.dart
       - lib/**
-      # - package:main_app/lib/app/loading_button.dart
+      - main_app/lib/**
     builders:
       widgetbook_generator:use_case_builder:
         generate_for:
           - lib/**
-          # - package:main_app/lib/app/loading_button.dart
+          - main_app/lib/**

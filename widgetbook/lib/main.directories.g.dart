@@ -13,6 +13,8 @@ import 'package:widgetbook/widgetbook.dart' as _i1;
 import 'package:widgetbook_example/app/widgets/elevated_loading_button.dart'
     as _i2;
 
+import '../../main_app/lib/app/widgets/outlined_loading_button.dart' as _i3;
+
 final directories = <_i1.WidgetbookNode>[
   _i1.WidgetbookFolder(
     name: 'app',
@@ -36,5 +38,32 @@ final directories = <_i1.WidgetbookNode>[
         ],
       )
     ],
-  )
+  ),
+  _i1.WidgetbookFolder(
+    name: 'main_app',
+    children: [
+      _i1.WidgetbookFolder(
+        name: 'lib',
+        children: [
+          _i1.WidgetbookFolder(
+            name: 'app',
+            children: [
+              _i1.WidgetbookFolder(
+                name: 'widgets',
+                children: [
+                  _i1.WidgetbookLeafComponent(
+                    name: 'OutlinedLoadingButton',
+                    useCase: _i1.WidgetbookUseCase(
+                      name: 'OutlinedLoadingButton Loaded State',
+                      builder: _i3.outlinedLoadingButtonLoaded,
+                    ),
+                  )
+                ],
+              )
+            ],
+          )
+        ],
+      )
+    ],
+  ),
 ];
