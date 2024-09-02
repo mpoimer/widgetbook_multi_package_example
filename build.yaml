@@ -1,0 +1,17 @@
+targets:
+  $default:
+    sources:
+      # --
+      # Note that it is important to include these in the default target.
+      - pubspec.*
+      - $package$
+      - lib/$lib$
+      # --
+      - widgetbook/lib/main.dart
+      - lib/**
+      # - package:main_app/lib/app/loading_button.dart
+    builders:
+      widgetbook_generator:use_case_builder:
+        generate_for:
+          - lib/**
+          # - package:main_app/lib/app/loading_button.dart
